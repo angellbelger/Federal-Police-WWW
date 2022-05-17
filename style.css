@@ -14,11 +14,11 @@
 
 :root {
     --colour00: #000000; /* Black */
-    --colour01: #031825; /* Rich Black FLOGRA 29 */
+    --colour01: #031825;
     --colour03: #222425; /* */
-    --colour04: #C42021; /* Lava */
+    --colour04: #d32f29; /* Lava */
     --colour05: #F0EDEE; /* Cultured */
-    --colour06: #EEC643; /* Ming */
+    --colour06: #DDC24D; /* Ming */
 }
 
 * {
@@ -147,20 +147,20 @@ div.superin {
     box-shadow: #0000009f 2px 2px 4px;
 }
 
-div#moreira {
-    background-image: url(images/sp/moreira.png);
+div#sp01 {
+    background-image: url(images/sp/s01.jpg);
     background-size: cover;
-    background-position: right center;
+    background-position: center left;
 }
 
-div#carla {
-    background-image: url(images/sp/carla.png);
+div#sp02 {
+    background-image: url(images/sp/s02.jpg);
     background-size: cover;
     background-image: center center;
 }
 
-div#fernandes {
-    background-image: url(images/sp/fernandes.png);
+div#sp03 {
+    background-image: url(images/sp/s03.jpg);
     background-size: cover;
     background-position: center center;
 }
@@ -192,10 +192,18 @@ main {
 }
 
 section.superin {
-    background-color: rgba(128, 128, 128, 0.219);
+    background-color: #000000;
     margin: 20px;
     padding: 10px;
     border-radius: 20px;
+}
+
+section.superin > h2 {
+    color: var(--colour05);
+}
+
+section.superin > p {
+    color: var(--colour05);
 }
 
 img#bo {
