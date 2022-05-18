@@ -48,6 +48,10 @@ nav {
     padding: 10px;
 }
 
+a {
+    text-decoration: none;
+}
+
 nav > a {
     color: var(--colour05);
     margin: 10px;
