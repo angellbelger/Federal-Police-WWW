@@ -79,6 +79,7 @@ a.external::after {
 
 img#logo {
     display: inline-block;
+    height: 10vw;
     padding-bottom: 20px;
 }
 
