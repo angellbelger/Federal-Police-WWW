@@ -211,6 +211,10 @@ section.superin > p {
     color: var(--colour05);
 }
 
+section.pf {
+    background-image: url();
+}
+
 img#bo {
     display: block;
     margin: auto;
