@@ -268,7 +268,7 @@ table {
 thead > tr > th {
     position: sticky;
     top: -1px;
-    background-color: #5c5c5c;
+    background-color: var(--colour00);
 }
 
 tbody > tr:nth-child(even) {
@@ -276,7 +276,7 @@ tbody > tr:nth-child(even) {
 }
 
 caption {
-    color: #770000;
+    color: var(--colour04);
     font-size: 1.5em;
     padding: 10px;
 }
