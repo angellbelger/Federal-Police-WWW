@@ -4,74 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PF</title>
+    <title>GCM</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
 </head>
-<body>
+<body onload="titleFlex()">
     <header>
-        <img src="images/logo/pf-exten.png" id="logo" alt="pf">
-        <p>Public Officer for Legal Investigations and Criminal Emergencies.</p>
+        <img src="images/logo/logo-gcm-02/logo-100h.png" id="logo" alt="GCM">
+        <h1 id="main">Guarda Civil Municipal</h1>
     </header>
     <nav>
         <a href="index.html">Home</a>
-        <a href="pages/pg002-gale.html">Data</a>
-        <a href="pages/pg003-super.html">Superintendent</a>
+        <a href="pages/pg002-gale.html">Galeria</a>
+        <a href="pages/pg003-super.html">Superintendente</a>
         <a href="pages/pg004-bo.html">BO</a>
-        <a href="pages/pg005-about.html">About</a>
+        <a href="pages/pg005-about.html">Sobre</a>
     </nav>
     <main>
-        <article>
-            <h2>Most requested services</h2>
-                <div class="box" id="q1">
-                    <div class="txt">
-                        <p>Guns</p>
+        <section class="news">
+            <article class="main">
+                <h2 class="alt">Últimas Notícia</h2>
+                <div class="news">
+                    <div class="photos" id="gcmpf">
+                        <p class="content">Aeroporto de Altamira é alvo de fiscalização do Canil da GCM e da Policia Federal.</p>
                     </div>
+                    <a href="" class="news">
+                        <h3 class="news">Mais Notícias</h3>
+                    </a>
                 </div>
-                <div class="box" id="q2">
-                    <div class="txt">
-                        <p>Passport</p>
+            </article>
+            
+        </section>
+        <section class="main">
+            <article class="services">
+                <h2>Serviços mais solicitados</h2>
+                <hr>
+                    <div class="box" id="q1">
+                        <div class="txt">
+                            <p>Apoio</p>
+                        </div>
                     </div>
-                </div>
-                <div class="box" id="q3">
-                    <div class="txt">
-                        <p>Antecedent</p>
+                    <a href="servicos/mariadapenha.html" class="service">
+                        <div class="box" id="q2">
+                            <div class="txt">
+                                <p class="t">Maria da Penha</p>
+                            </div>
+                        </div>
+                    </a>
+                    <div class="box" id="q3">
+                        <div class="txt">
+                            <p>Ouvidoria</p>
+                        </div>
                     </div>
+                    <a href="servicos/transito.html" class="service">
+                        <div class="box" id="q4">
+                            <div class="txt">
+                                <p>Trânsito</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="servicos/canil.html" class="service">
+                        <div class="box" id="q5">
+                            <div class="txt">
+                                <p>Canil</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="servicos/concurso.html" class="service">
+                        <div class="box" id="q6">
+                            <div class="txt">
+                                <p>Concurso Público</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="box" id="q4">
-                    <div class="txt">
-                        <p>Migration</p>
-                    </div>
-                </div>
-                <div class="box" id="q5">
-                    <div class="txt">
-                        <p>Airport</p>
-                    </div>
-                </div>
-                <div class="box" id="q6">
-                    <div class="txt">
-                        <p>Apply</p>
-                    </div>
-                </div>
-
-            </div>
-        <article>
-            <div id="pf">
-                <p class="new">PF and CGU investigate deviations in school transport contracts in municipalities for cantinenses</p>
-            </div>
-        </article>
-        <article>
-            <h2>News</h2>
-            <div class="news" id="a"></div>
-            <div class="news" id="b"></div>
-            <div id="warning">
-                <p id="w">All images and news were taken from the official website of the Federal Government</p>
-                <p id="w"><a href="https://www.gov.br/pf/pt-br" target="_blank" rel="external">Click here</a></p>
-            </div>
-        </article>
+            </article>
+            <h2>Cadeia de Comando</h2>
+        </section>
     </main>
     <footer>
-        <p>Angell Belger.</p>
+        <p>Esse site foi desenvolvido pelo Departamento de Inteligência da GCM.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

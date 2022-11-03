@@ -5,38 +5,37 @@
     src: url(font/xirod.ttf);
 }
 
-@font-face {
-    font-family: "chicago";
-    src: url(font/Chicago\ Police\ Font.otf);
-}
-
 /* All for one */
 
 :root {
     --colour00: #000000; /* Black */
-    --colour01: #031825;
-    --colour03: #222425; /* */
-    --colour04: #d32f29; /* Lava */
-    --colour05: #F0EDEE; /* Cultured */
-    --colour06: #DDC24D; /* Ming */
+    --colour01: #266DD3; /* Celtic blue */
+    --colour03: #303030; /* */
+    --colour04: #B80C09; /* Internatioanl */
+    --colour05: #F7F7FF; /* Ghost white */
+    --colour06: #EEC643; /* Ming */
+    --colour07: #077a07;
 }
 
 * {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0px;
+    padding: 0px;
 }
 
-/* Omega */
+/* --------------*/
+
+/* BASIC */
 
 header {
     text-align: left;
     background-color: var(--colour00);
-    padding: 30px;
+    padding: 10px;
 }
 
 header > p {
     color: var(--colour05);
-    font-size: 1.4em;
+    font-size: 1.0em;
     text-shadow: 2px 0px 5px #000000, -2px 0px 5px #000000, 0px 2px 5px #000000, 0px -2px 5px #000000;
     text-align: center;
     padding: 10px 0px 10px 0px;
@@ -46,10 +45,6 @@ nav {
     background-color: var(--colour00);
     box-shadow: 0px 2px 4px #00000050;
     padding: 10px;
-}
-
-a {
-    text-decoration: none;
 }
 
 nav > a {
@@ -63,7 +58,7 @@ nav > a {
 
 nav > a:hover {
     color: var(--colour05);
-    background-color: var(--colour04);
+    background-color: var(--colour01);
     border-radius: 4px;
     transition: 0.4s;
 }
@@ -76,22 +71,89 @@ a.external {
 a.external::after {
     content: '\00A0\1F517'
 }
-
-img#logo {
-    display: inline-block;
-    height: 10vw;
-    padding-bottom: 20px;
+hr {
+    margin: 20px;
 }
 
 body {
-    background-color: var(--colour01);
+    background-color: var(--colour05);
+}
+
+main {
+    background-color: var(--colour05);
+}
+
+section.main {
+    background-color: var(--colour05);
+    margin: auto;
+    padding: 20px;
+    max-width: 1000px;
+}
+
+article {
+    text-align: center;
+}
+
+
+footer {
+    background-color: var(--colour00);
+}
+
+footer p {
+    color: var(--colour05);
+    text-align: center;
+}
+
+/* -------------- */
+
+/* ------- News -------*/
+
+section.news {
+    min-width: 300px;
+    min-height: 500px;
+    margin: 0px;
+    padding: 15px;
+    background-image: url(images/photos/12.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat;
+
+}
+
+article.main {
+    background-color: transparent;
+    color: var(--colour05);
+    margin: auto;
+    max-width: 1000px;
+}
+
+div.news {
+    display: inline-block;
+
+}
+
+h3.news {
+    text-align: right;
+    font-weight: bolder;
+}
+
+a.news {
+    color: var(--colour05);
+}
+
+/* -------------- */
+
+/* ------- Services -------*/
+
+article.services {
+    text-align: center;
 }
 
 div.box {
     position: relative;
     display: inline-block;
-    height: 150px;
-    width: 250px;
+    height: 180px;
+    width: 300px;
     margin: 5px;
     background-color: #000000;
     border: 2px solid #000000;
@@ -102,7 +164,7 @@ div.txt {
     background-color: transparent;
     border: 5px solid #ffffff;
     height: 100px;
-    width: 200px;
+    width: 220px;
     left: 50%;
     top: 50%;
     box-shadow: 2px 0px 2px #000000ab, -2px 0px 2px #000000ab, 0px 2px 2px #000000ab, 0px -2px 2px #000000ab;
@@ -110,67 +172,8 @@ div.txt {
     transform: translate(-50%,-50%);
 }
 
-div#q1 {
-    background-image: url(images/new-images/p01.jpg); /*Foto de Mikhail Nilov no Pexels*/
-    background-size: 100%;
-    background-position: center bottom;
-}
-
-div#q2 {
-    background-image: url(images/new-images/p02.jpg); /*Foto de Spencer Davis no Pexels*/
-    background-size: 100%;
-    background-position: center center;
-}
-
-div#q3 {
-    background-image: url(images/new-images/p03.png); /*Foto de RODNAE Productions no Pexels*/
-    background-size: 100%;
-}
-
-div#q4 {
-    background-image: url(images/new-images/p04.png);
-    background-size: 100%;
-}
-
-div#q5 {
-    background-image: url(images/new-images/p05.png); /*Foto de Ahmed Muntasir no Pexels*/
-    background-size: 100%;
-}
-
-div#q6 {
-    background-image: url(images/new-images/p06.png);
-    background-size: 100%;
-}
-
-div.superin {
-    background-color: #000000;
-    border: solid 5px var(--colour06);
-    border-radius: 5px;
-    height: 250px;
-    width: 250px;
-    margin: 5px;
-    box-shadow: #0000009f 2px 2px 4px;
-}
-
-div#sp01 {
-    background-image: url(images/sp/s01.jpg);
-    background-size: cover;
-    background-position: center left;
-}
-
-div#sp02 {
-    background-image: url(images/sp/s02.jpg);
-    background-size: cover;
-    background-image: center center;
-}
-
-div#sp03 {
-    background-image: url(images/sp/s03.jpg);
-    background-size: cover;
-    background-position: center center;
-}
-
 div.box p {
+    text-align: center;
     font-size: 30px;
     text-indent: 0px;
     text-shadow: 3px 0px 3px #000000, -3px 0px 3px #000000, 0px 3px 3px #000000, 0px -3px 3px #000000;
@@ -186,79 +189,117 @@ div.box:hover {
     background-color: #00000080;
 }
 
-main {
-    background-color: var(--colour05);
-    margin: auto;
-    padding: 20px;
-    max-width: 900px;
-    margin-bottom: 20px;
-    border-radius: 0px 0px 20px 20px;
-    box-shadow: 2px 0px 5px #000000;
+div#q1 {
+    background-image: url(images/new-images/normal/1.2.jpg);
+    background-size: 100%;
 }
 
+div#q2 {
+    background-image: url(images/new-images/normal/2.jpg);
+    background-size: 100%;
+}
+
+div#q3 {
+    background-image: url(images/new-images/normal/3.png);
+    background-size: 100%;
+}
+
+div#q4 {
+    background-image: url(images/new-images/normal/4.3.jpg);
+    background-size: 100%;
+}
+
+div#q5 {
+    background-image: url(images/new-images/normal/5.1.png);
+    background-size: 100%;
+
+}
+
+div#q6 {
+    background-image: url(images/new-images/normal/6.png);
+    background-size: 100%;
+}
+
+/* -------------- */
+
+/* ------- Superintendencia -------*/
+
 section.superin {
-    background-color: #000000;
+    background-color: var(--colour00);
     margin: 20px;
     padding: 10px;
     border-radius: 20px;
+    max-width: 1000px;
 }
 
-section.superin > h2 {
-    color: var(--colour05);
-}
-
-section.superin > p {
-    color: var(--colour05);
-}
-
-div#pf {
-    background-image: url(images/others/62de2432-d032-4197-8d23-e15ea9134f18.jpeg);
-    min-height: 400px;
-    margin: 10px -20px 10px -20px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-div.news {
-    display: inline-block;
+div.superin {
+    background-color: #000000;
+    border: solid 5px var(--colour06);
+    border-radius: 5px;
     height: 250px;
-    width: 300px;
+    width: 250px;
+    margin: 5px;
+    box-shadow: #0000009f 2px 2px 4px;
+}
+
+div#patricia {
+    background-image: url(images/sp/patricia.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+div#moreira {
+    background-image: url(images/sp/moreira.png);
+    background-size: cover;
+    background-position: right center;
+}
+
+div#carla {
+    background-image: url(images/sp/carla02.jpg);
+    background-size: cover;
+    background-image: center center;
+}
+
+div#fernandes {
+    background-image: url(images/sp/fernandes.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+/* --------------*/
+
+/* ------- Photos -------*/
+
+div.photos {
+    background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover;
-    border: 2px var(--colour00);
+    height: 500px;
+    margin: 10px;
 }
 
-div#a {
-    background-image: url(images/others/a.jpeg);
+div#tropa {
+    background-image: url(images/photos/7.jpeg);
 }
 
-div#b {
-    background-image: url(images/others/b.jpeg);
+div#gcmpf {
+    background-image: url(images/photos/1.jpg);
 }
 
-div#warning {
-    color: var(--colour05);
-    background-color: var(--colour04);
-    min-height: 70px;
-    margin: 20px;
-    border-radius: 20px;
+div#novocmt {
+    background-image: url(images/photos/6.jpeg);
 }
 
-p#w {
-    text-indent: 0px;
-    text-align: center;
-    padding-bottom: 20px;
+div#mp {
+    background-image: url(images/photos/8.jpg);
+    background-attachment: fixed;
+    box-shadow: inset 15px 2px 45px;
 }
 
-p.new {
-    text-align: center;
-    font-size: 30px;
-    color: var(--colour05);
-    padding-top: 170px;
-    text-shadow: 5px 0px 5px black, -5px 0px 5px black, 0px 5px 5px black, 0px -5px 5px black;
+div#canil {
+    background-image: url(images/photos/9.jpg);
 }
+
 
 img#bo {
     display: block;
@@ -266,26 +307,84 @@ img#bo {
     padding: 20px;
 }
 
-article {
-    text-align: center;
+img.photo {
+    width: 100%;
 }
+
+img#logo {
+    float: left;
+    display: inline;
+    text-align: left;
+    padding: 20px;
+}
+
+/* --------------*/
+
+/* ------- Boxes -------*/
+
+div.area {
+    text-align: center;
+    margin: auto;
+}
+
+textarea {
+    font-size: 14px;
+    text-indent: 10px;
+    margin: auto;
+    padding: 20px;
+}
+
+div.result {
+    margin: 20px;
+    background-color: #20aa20;
+}
+
+/* --------------*/
+
+/* ------- button -------*/
+
+div.button {
+    background-color: var(--colour04); /* red is colour04 and green is colour07*/
+    color: var(--colour05);
+    font-size: 20px;
+    margin: auto;
+    text-align: center;
+    line-height: 100px;
+    height: 100px;
+    width: 300px;
+    border-radius: 40px;
+}
+div#on {
+    background-color: var(--colour07);
+}
+/* --------------*/
+
+/* ------- TXT -------*/
 
 h1#main {
     color: var(--colour05);
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.0em;
-    font-weight: bolder;
-    text-shadow: 2px 0px 5px #000000, -2px 0px 5px #000000, 0px 2px 5px #000000, 0px -2px 5px #000000;
+    font-family: "modern", Arial, Helvetica, sans-serif;
+    text-shadow: 2px 0px 5px var(--colour03), -2px 0px 5px var(--colour03), 0px 2px 5px var(--colour03), 0px -2px 5px #000000;
     text-align: left;
+    padding: 50px;
 }
 
 h2 {
-    color: var(--colour01);
+    color: var(--colour00);
     text-align: left;
     padding: 10px;
 }
 
+h2.alt {
+    color: var(--colour05);
+}
+
+h3 {
+    text-align: center;
+}
+
 p {
+    font-size: 16px;
     text-indent: 20px;
     text-align: justify;
     padding: 20px;
@@ -293,53 +392,60 @@ p {
 
 }
 
-
-footer {
-    background-color: var(--colour00);
-}
-
-footer p {
+p.content {
     color: var(--colour05);
     text-align: center;
+    font-size: 30px;
+    line-height: 50px;
+    text-shadow: 3px 0px 3px #000000, -3px 0px 3px #000000, 0px 3px 3px #000000, 0px -3px 3px #000000;
+    padding-top: 30%;
 }
 
-div#statistic {
-    height: 250px;
-    overflow-y: auto;
-
+p.txt {
+    font-size: 18px;
+    line-height: 40px;
 }
 
-table {
-    border-collapse: collapse;
+/* -------------- */
+
+/* ------- INPUT -------*/
+
+input.txt {
+    font-size: 14px;
+    width: 250px;
+    height: 20px;
+    padding: 4px 5px 4px 5px;
+}
+
+/* -------------- */
+
+/* ------- Link -------*/
+
+a {
+    text-decoration: none;
+}
+
+a.service {
+    text-decoration: none;
+    color: #000000;
+}
+
+/* -------------- */
+
+
+div.video {
+    background-color: var(--colour05);
+    margin: 30px -20px 30px -20px;
+    padding: 20px;
+    padding-bottom: 50%;
     position: relative;
 }
 
-thead > tr > th {
-    position: sticky;
-    top: -1px;
-    background-color: var(--colour00);
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%
 }
 
-tbody > tr:nth-child(even) {
-    background-color: #d3d3d3;
-}
-
-caption {
-    color: var(--colour04);
-    font-size: 1.5em;
-    padding: 10px;
-}
-
-td, th {
-    border: 1px solid #000000;
-    padding: 10px;
-}
-
-th {
-    background-color: #5c5c5c;
-    color: #ffffff;
-}
-
-td.number {
-    text-align: center;
-}
