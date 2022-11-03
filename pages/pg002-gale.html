@@ -4,168 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PF</title>
+    <title>GCM</title>
     <link rel="stylesheet" href="../style.css">
-    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="../favicon/favicon.ico" type="image/x-icon">
 </head>
-<body>
+<body onload="titleFlex()">
     <header>
-        <img src="../images/logo/pf-exten.png" id="logo" alt="pf">
-        <p>Public Officer for Legal Investigations and Criminal Emergencies.</p>
+        <img src="../images/logo/logo-gcm-02/logo-100h.png" id="logo" alt="GCM">
+        <h1 id="main">Guarda Civil Municipal</h1>
     </header>
     <nav>
         <a href="../index.html">Home</a>
-        <a href="#">Data</a>
-        <a href="./pg003-super.html">Superintendent</a>
+        <a href="#">Galeria</a>
+        <a href="./pg003-super.html">Superintendente</a>
         <a href="./pg004-bo.html">BO</a>
-        <a href="./pg005-about.html">About</a>
+        <a href="./pg005-about.html">Sobre</a>
     </nav>
     <main>
-        <h1>Violence Index</h1>
-        <p>Ranking of the 15 most violent municipalities in relation to the overall score based on the total and average rate of intentional homicides between 2018 and 2020.</p>
-        <div id="statistic">
-            <table>
-                <caption>Ranking</caption>
-                <thead>
-                    <tr>
-                        <th>UF</th>
-                        <th>Counties</th>
-                        <th>Total</th>
-                        <th>Rate</th>
-                        <th>General Note</th>
-                        <th>Ranking</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>AC</td>
-                        <td>Rio Branco</td>
-                        <td class="number">386</td>
-                        <td class="number">93,4</td>
-                        <td class="number">10,0</td>
-                        <td class="number">1</td>
-                    </tr>
-                    <tr>
-                        <td>CE</td>
-                        <td>Caucaia</td>
-                        <td class="number">308</td>
-                        <td class="number">84,2</td>
-                        <td class="number">9,7</td>
-                        <td class="number">2</td>
-                    </tr>
-                    <tr>
-                        <td>CE</td>
-                        <td>Maracanaú</td>
-                        <td class="number">170</td>
-                        <td class="number">73,9</td>
-                        <td class="number">9,5</td>
-                        <td class="number">3</td>
-                    </tr>
-                    <tr>
-                        <td>PE</td>
-                        <td>Cabo de Santo Agostinho</td>
-                        <td class="number">168</td>
-                        <td class="number">80,2</td>
-                        <td class="number">5</td>
-                        <td class="number">4</td>
-                    </tr>
-                    <tr>
-                        <td>BA</td>
-                        <td>Feira de Santana</td>
-                        <td class="number">377</td>
-                        <td class="number">60,9</td>
-                        <td class="number">9,2</td>
-                        <td class="number">5</td>
-                    </tr>
-                    <tr>
-                        <td>AC</td>
-                        <td>Cruzeiro do Sul</td>
-                        <td class="number">131</td>
-                        <td class="number">146,7</td>
-                        <td class="number">9,1</td>
-                        <td class="number">6</td>
-                    </tr>
-                    <tr>
-                        <td>CE</td>
-                        <td>Maranguape</td>
-                        <td class="number">97</td>
-                        <td class="number">74,4</td>
-                        <td class="number">8,8</td>
-                        <td class="number">7</td>
-                    </tr>
-                    <tr>
-                        <td>CE</td>
-                        <td>Juazeiro do Norte</td>
-                        <td class="number">190</td>
-                        <td class="number">68,8</td>
-                        <td class="number">8,7</td>
-                        <td class="number">8</td>
-                    </tr>
-                    <tr>
-                        <td>BA</td>
-                        <td>Camaçari</td>
-                        <td class="number">192</td>
-                        <td class="number">63,2</td>
-                        <td class="number">8,7</td>
-                        <td class="number">9</td>
-                    </tr>
-                    <tr>
-                        <td>RN</td>
-                        <td>Mossoró</td>
-                        <td class="number">176</td>
-                        <td class="number">58,5</td>
-                        <td class="number">8,7</td>
-                        <td class="number">10</td>
-                    </tr>
-                    <tr>
-                        <td>RS</td>
-                        <td>Alvorada</td>
-                        <td class="number">132</td>
-                        <td class="number">62,3</td>
-                        <td class="number">8,5</td>
-                        <td class="number">11</td>
-                    </tr>
-                    <tr>
-                        <td>PA</td>
-                        <td>Altamira</td>
-                        <td class="number">89</td>
-                        <td class="number">76,5</td>
-                        <td class="number">8,4</td>
-                        <td class="number">12</td>
-                    </tr>
-                    <tr>
-                        <td>BA</td>
-                        <td>Simões Filho</td>
-                        <td class="number">98</td>
-                        <td class="number">71,9</td>
-                        <td class="number">8,1</td>
-                        <td class="number">13</td>
-                    </tr>
-                    <tr>
-                        <td>PB</td>
-                        <td>Santa Rita</td>
-                        <td class="number">89</td>
-                        <td class="number">64,6</td>
-                        <td class="number">7,8</td>
-                        <td class="number">14</td>
-                    </tr>
-                    <tr>
-                        <td>PA</td>
-                        <td>Marabá</td>
-                        <td class="number">132</td>
-                        <td class="number">46,7</td>
-                        <td class="number">7,7</td>
-                        <td class="number">15</td>
-                    </tr>
-                </tbody>
-                <tfoot>
-                </tfoot>
-            </table>
-        </div>
-        <p>As can be seen, among the 15 municipalities with the highest overall scores, only five are located outside the Northeast region. The distribution of these 15 municipalities by state is as follows: Ceará with four, Bahia with three, Acre with two, Pará with two and Rio Grande do Norte, Pernambuco, Paraíba and Rio Grande do Sul with one each.</p>
+        <section class="main">
+            <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/9H2oxem_Dn0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        </section>
     </main>
     <footer>
-        <p>Angell Belger.</p>
+        <p>Esse site foi desenvolvido pelo Departamento de Inteligência da GCM.</p>
     </footer>
+    <script src="../script.js"></script>
 </body>
 </html>
