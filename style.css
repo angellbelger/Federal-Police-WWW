@@ -5,6 +5,16 @@
     src: url(font/xirod.ttf);
 }
 
+@font-face {
+    font-family: "chivo";
+    src: url(font/Chivo-Black.otf);
+}
+
+@font-face {
+    font-family: "chicago";
+    src: url(font/Chicago\ Police\ Font.otf);
+}
+
 /* All for one */
 
 :root {
@@ -58,7 +68,7 @@ nav > a {
 
 nav > a:hover {
     color: var(--colour05);
-    background-color: var(--colour01);
+    background-color: var(--colour04);
     border-radius: 4px;
     transition: 0.4s;
 }
@@ -195,7 +205,7 @@ div#q1 {
 }
 
 div#q2 {
-    background-image: url(images/new-images/normal/2.jpg);
+    background-image: url(images/new-images/normal/2.png);
     background-size: 100%;
 }
 
@@ -205,12 +215,12 @@ div#q3 {
 }
 
 div#q4 {
-    background-image: url(images/new-images/normal/4.3.jpg);
+    background-image: url(images/new-images/normal/4.jpg);
     background-size: 100%;
 }
 
 div#q5 {
-    background-image: url(images/new-images/normal/5.1.png);
+    background-image: url(images/new-images/normal/5.jpg);
     background-size: 100%;
 
 }
@@ -242,26 +252,26 @@ div.superin {
     box-shadow: #0000009f 2px 2px 4px;
 }
 
-div#patricia {
-    background-image: url(images/sp/patricia.jpg);
+div#sp04 {
+    background-image: url(images/sp/s04.jpg);
     background-size: cover;
     background-position: center center;
 }
 
-div#moreira {
-    background-image: url(images/sp/moreira.png);
+div#sp03 {
+    background-image: url(images/sp/s03.jpg);
     background-size: cover;
     background-position: right center;
 }
 
-div#carla {
-    background-image: url(images/sp/carla02.jpg);
+div#sp02 {
+    background-image: url(images/sp/s02.jpg);
     background-size: cover;
     background-image: center center;
 }
 
-div#fernandes {
-    background-image: url(images/sp/fernandes.jpg);
+div#sp01 {
+    background-image: url(images/sp/s01.jpg);
     background-size: cover;
     background-position: center center;
 }
@@ -283,7 +293,7 @@ div#tropa {
 }
 
 div#pf {
-    background-image: url(images/photos/cripto.jpg);
+    background-image: url(images/photos/interpol.jpg);
 }
 
 div#novocmt {
@@ -363,7 +373,7 @@ div#on {
 
 h1#main {
     color: var(--colour05);
-    font-family: "modern", Arial, Helvetica, sans-serif;
+    font-family: "chicago", Arial, Helvetica, sans-serif;
     text-shadow: 2px 0px 5px var(--colour03), -2px 0px 5px var(--colour03), 0px 2px 5px var(--colour03), 0px -2px 5px #000000;
     text-align: left;
     padding: 50px;
