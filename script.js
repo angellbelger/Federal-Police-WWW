@@ -3,7 +3,7 @@ function titleFlex(){
     var width = window.document.body.clientWidth
     
     if (width <= 700)
-        name.innerHTML = `GCM`
+        name.innerHTML = `Polici F.`
 }
 
 function metadata(){
